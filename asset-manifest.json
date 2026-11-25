@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/railway-booking/static/css/main.54844387.css",
+    "main.js": "/railway-booking/static/js/main.e98ecdd0.js",
+    "static/media/train.png": "/railway-booking/static/media/train.0375ed390e5c731ab1d3.png",
+    "static/media/railway.png": "/railway-booking/static/media/railway.465fac5ff633a4659b4f.png",
+    "static/media/man.png": "/railway-booking/static/media/man.0f183dfabe4dfc319ece.png",
+    "static/media/woman.png": "/railway-booking/static/media/woman.301ebeef2ba1d838d7a8.png",
+    "static/media/skype.svg": "/railway-booking/static/media/skype.220e86f2dfe3e86003d8a1e2165f8ddf.svg",
+    "static/media/in.svg": "/railway-booking/static/media/in.e7186ea0f766f59305507f0dce6fa6bb.svg",
+    "static/media/google.svg": "/railway-booking/static/media/google.30589544e8f01d174bda51733ca3c2f1.svg",
+    "static/media/calendar.svg": "/railway-booking/static/media/calendar.708a9b513c8caf1e47f6466925914576.svg",
+    "static/media/twitter.svg": "/railway-booking/static/media/twitter.935ee6e650fd8b2b376a8924f788b191.svg",
+    "static/media/email.svg": "/railway-booking/static/media/email.4701958975986a6e9797bd981b82ec40.svg",
+    "static/media/facebook.svg": "/railway-booking/static/media/facebook.a63fbe0e663a852cb69f7fe8235648ba.svg",
+    "static/media/youtube.svg": "/railway-booking/static/media/youtube.59ac1c2dc749bf4d8733bed90492247b.svg",
+    "index.html": "/railway-booking/index.html",
+    "static/media/phone.svg": "/railway-booking/static/media/phone.a14a18b3d296e2341ed8b24242a315b6.svg",
+    "static/media/computer.svg": "/railway-booking/static/media/computer.759cce968003f33406aee91242b07055.svg",
+    "main.54844387.css.map": "/railway-booking/static/css/main.54844387.css.map",
+    "main.e98ecdd0.js.map": "/railway-booking/static/js/main.e98ecdd0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.54844387.css",
+    "static/js/main.e98ecdd0.js"
+  ]
+}
