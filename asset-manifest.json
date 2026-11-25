@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/railway-booking/static/css/main.54844387.css",
-    "main.js": "/railway-booking/static/js/main.e98ecdd0.js",
+    "main.css": "/railway-booking/static/css/main.343c5059.css",
+    "main.js": "/railway-booking/static/js/main.22bf5bfe.js",
     "static/media/train.png": "/railway-booking/static/media/train.0375ed390e5c731ab1d3.png",
     "static/media/railway.png": "/railway-booking/static/media/railway.465fac5ff633a4659b4f.png",
     "static/media/man.png": "/railway-booking/static/media/man.0f183dfabe4dfc319ece.png",
@@ -17,11 +17,11 @@
     "index.html": "/railway-booking/index.html",
     "static/media/phone.svg": "/railway-booking/static/media/phone.a14a18b3d296e2341ed8b24242a315b6.svg",
     "static/media/computer.svg": "/railway-booking/static/media/computer.759cce968003f33406aee91242b07055.svg",
-    "main.54844387.css.map": "/railway-booking/static/css/main.54844387.css.map",
-    "main.e98ecdd0.js.map": "/railway-booking/static/js/main.e98ecdd0.js.map"
+    "main.343c5059.css.map": "/railway-booking/static/css/main.343c5059.css.map",
+    "main.22bf5bfe.js.map": "/railway-booking/static/js/main.22bf5bfe.js.map"
   },
   "entrypoints": [
-    "static/css/main.54844387.css",
-    "static/js/main.e98ecdd0.js"
+    "static/css/main.343c5059.css",
+    "static/js/main.22bf5bfe.js"
   ]
 }
