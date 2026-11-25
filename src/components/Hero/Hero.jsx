@@ -1,13 +1,16 @@
 import './Hero.css';
 import trainBg from '../../assets/train.png';
 import iconCalendar from '../../assets/calendar.svg';
+import Header from '../Header/Header';
 
 function Hero() {
   return (
     <section className="hero" style={{ backgroundImage: `url(${trainBg})` }}>
+      <Header /> 
+
       <div className="hero__content">
         <h1 className="hero__title">
-          Вся жизнь —<br />
+          Вся жизнь -<br />
           <span>путешествие!</span>
         </h1>
 

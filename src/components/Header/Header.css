@@ -1,27 +1,50 @@
 .header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+}
+
+.header__top {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 20px 50px;
-  background-color: #2d2b2c;
-  color: white;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .header__logo {
-  font-size: 24px;
-  font-weight: bold;
-  cursor: pointer;
+  color: white;
+  font-size: 28px;
+  font-weight: 900;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.header__nav-bar {
+  background-color: #2d2b2c;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .header__nav {
   display: flex;
-  gap: 30px;
+  gap: 40px;
+  padding: 15px 0;
+  max-width: 1200px;
+  width: 100%;
+  justify-content: center;
 }
 
 .header__link {
   color: white;
   text-decoration: none;
   font-size: 16px;
+  font-weight: 300;
   transition: color 0.3s ease;
 }
 
