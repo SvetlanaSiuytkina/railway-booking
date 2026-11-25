@@ -1,0 +1,75 @@
+.how {
+  padding: 80px 0;
+  position: relative;
+  color: white;
+  overflow: hidden;
+  background-color: #f39c12;
+}
+
+.how::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: var(--bg-image);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+  z-index: 0;
+}
+
+.how .container {
+  position: relative;
+  z-index: 1;
+}
+
+.how__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 50px;
+}
+
+.how__btn {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 10px 25px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.how__btn:hover {
+  background: white;
+  color: #d35400;
+}
+
+.how__steps {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.how__step p {
+  margin-top: 15px;
+  font-size: 16px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.how__icon {
+  background: white;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.how__icon img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
