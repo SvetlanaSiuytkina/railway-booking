@@ -1,8 +1,8 @@
 import './HowItWorks.css';
-import railwayBg from '../../assets/railway.png';
-import iconMonitor from '../../assets/computer.svg';
-import iconHome from '../../assets/home.png';
-import iconGlob from '../../assets/globe.png';
+import railwayBg from '../../assets/page1/railway.png';
+import iconMonitor from '../../assets/page1/computer.svg';
+import iconHome from '../../assets/page1/home.png';
+import iconGlob from '../../assets/page1/globe.png';
 
 function HowItWorks() {
   return (

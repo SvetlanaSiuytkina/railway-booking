@@ -1,12 +1,12 @@
 import './Footer.css';
-import iconPhone from '../../assets/phone.svg';
-import iconEmail from '../../assets/email.svg';
-import iconSkype from '../../assets/skype.svg';
-import iconYoutube from '../../assets/youtube.svg';
-import iconIn from '../../assets/in.svg';
-import iconGoogle from '../../assets/google.svg';
-import iconFacebook from '../../assets/facebook.svg';
-import iconTwitter from '../../assets/twitter.svg';
+import iconPhone from '../../assets/page1/phone.svg';
+import iconEmail from '../../assets/page1/email.svg';
+import iconSkype from '../../assets/page1/skype.svg';
+import iconYoutube from '../../assets/page1/youtube.svg';
+import iconIn from '../../assets/page1/in.svg';
+import iconGoogle from '../../assets/page1/google.svg';
+import iconFacebook from '../../assets/page1/facebook.svg';
+import iconTwitter from '../../assets/page1/twitter.svg';
 
 function Footer() {
   return (

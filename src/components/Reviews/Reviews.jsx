@@ -1,6 +1,6 @@
 import './Reviews.css';
-import avatarWoman from '../../assets/woman.png';
-import avatarMan from '../../assets/man.png';
+import avatarWoman from '../../assets/page1/woman.png';
+import avatarMan from '../../assets/page1/man.png';
 
 function Reviews() {
   return (

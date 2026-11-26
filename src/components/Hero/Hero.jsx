@@ -1,7 +1,8 @@
 import './Hero.css';
-import trainBg from '../../assets/train.png';
-import iconCalendar from '../../assets/calendar.svg';
+import trainBg from '../../assets/page1/train.png';
+import iconCalendar from '../../assets/page1/calendar.svg';
 import Header from '../Header/Header';
+import { Link } from 'react-router-dom';
 
 function Hero() {
   return (
@@ -44,9 +45,9 @@ function Hero() {
             </div>
           </div>
 
-          <button type="button" className="search-form__button">
+          <Link to="/search" className="search-form__button">
             НАЙТИ БИЛЕТЫ
-          </button>
+          </Link>
         </div>
       </div>
     </section>
