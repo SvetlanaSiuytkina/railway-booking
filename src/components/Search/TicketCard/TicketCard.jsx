@@ -12,7 +12,11 @@ function TicketCard({ ticket, onSelectSeats }) {
     lux: 'Люкс',
   };
 
-  const seatsCount = { sitting: '88', reserved: '52', coupe: '24', lux: '15' };
+  const seatsCount = ticket.seats || { sitting: '88', reserved: '52', coupe: '24', lux: '15' };
+
+  const formatPrice = (price) => {
+    return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+  };
 
   return (
     <div className="ticket">
@@ -22,7 +26,11 @@ function TicketCard({ ticket, onSelectSeats }) {
         </div>
         <div className="ticket__number">{ticket.trainNumber}</div>
         <div className="ticket__route">
-          {ticket.route}
+          {ticket.route.split(' → ').map((city, i, arr) => (
+             <span key={i}>
+               {city} {i < arr.length - 1 && <br/>}
+             </span>
+          ))}
         </div>
       </div>
 
@@ -30,7 +38,8 @@ function TicketCard({ ticket, onSelectSeats }) {
         <div className="ticket__time-block">
           <span className="ticket__time">{ticket.departureTime}</span>
           <span className="ticket__city">
-            {ticket.departureCity}<br />
+            {ticket.departureCity}
+            <br />
             <small>{ticket.departureStation}</small>
           </span>
         </div>
@@ -43,7 +52,8 @@ function TicketCard({ ticket, onSelectSeats }) {
         <div className="ticket__time-block">
           <span className="ticket__time">{ticket.arrivalTime}</span>
           <span className="ticket__city">
-            {ticket.arrivalCity}<br />
+            {ticket.arrivalCity}
+            <br />
             <small>{ticket.arrivalStation}</small>
           </span>
         </div>
@@ -54,8 +64,12 @@ function TicketCard({ ticket, onSelectSeats }) {
           {Object.entries(ticket.prices).map(([type, price]) => (
             <div key={type} className="ticket__price-row">
               <span className="ticket__type">{priceTypes[type]}</span>
-              <span className="ticket__seats">{seatsCount[type] || '10'}</span>
-              <span className="ticket__price">от {price} ₽</span>
+              <span className="ticket__seats">{seatsCount[type]}</span>
+              <div className="ticket__price-value">
+                <span className="ticket__price-from">от</span>
+                <span className="ticket__price">{formatPrice(price)}</span>
+                <span className="ticket__price-rub">₽</span>
+              </div>
             </div>
           ))}
         </div>

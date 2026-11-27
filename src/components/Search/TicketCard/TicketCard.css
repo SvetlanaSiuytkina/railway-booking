@@ -2,44 +2,48 @@
   display: flex;
   background: white;
   border-radius: 5px;
-  padding: 25px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-  border: 1px solid #eee;
+  padding: 0;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  border: 1px solid #C4C4C4;
+  min-height: 268px;
+  overflow: hidden;
+  width: 100%;
 }
 
 .ticket__info {
-  width: 150px;
+  width: 196px;
+  background-color: #E4E0E9;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-right: 1px solid #eee;
-  padding-right: 20px;
+  padding: 30px 15px;
+  flex-shrink: 0;
 }
 
 .ticket__icon-wrapper {
   width: 86px;
   height: 86px;
   border-radius: 50%;
-  border: 2px solid #fff;
-  background-color: #E4E0E9;
+ 
+  background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .ticket__train-icon {
-  width: 40px;
-  height: 40px;
+  width: 86px;
+  height: 86px;
   object-fit: contain;
-  opacity: 0.7;
+  filter: brightness(0) invert(1);
 }
 
 .ticket__number {
   font-size: 24px;
   font-weight: 700;
   color: #292929;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .ticket__route {
@@ -47,46 +51,55 @@
   font-weight: 400;
   color: #928F94;
   text-align: center;
-  line-height: 1.2;
+  line-height: 1.4;
 }
 
 .ticket__times {
   flex: 1;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 0 30px;
+  padding: 30px 20px;
+  border-right: 1px solid #E5E5E5;
+  min-width: 0;
 }
 
 .ticket__time-block {
   display: flex;
   flex-direction: column;
+  width: 120px;
 }
 
 .ticket__time {
   font-size: 24px;
   font-weight: 700;
   color: #292929;
+  margin-bottom: 5px;
 }
 
 .ticket__city {
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: 700;
   color: #292929;
-  margin-top: 5px;
+  margin-bottom: 3px;
+  line-height: 1.2;
 }
 
 .ticket__city small {
+  font-size: 16px; 
+  font-weight: 400;
   color: #928F94;
-  font-size: 14px;
 }
 
 .ticket__duration {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #928F94;
-  font-size: 16px;
+  justify-content: center;
+  color: #C4C4C4;
+  font-size: 18px;
+  margin-top: 15px;
+  width: 80px;
 }
 
 .ticket__arrow {
@@ -96,57 +109,83 @@
 }
 
 .ticket__prices {
-  width: 220px;
+  width: 270px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  flex-shrink: 0;
 }
 
 .ticket__price-list {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-bottom: 15px;
 }
 
 .ticket__price-row {
   display: flex;
   align-items: center;
-  font-size: 16px;
+  font-size: 18px;
   color: #292929;
+  width: 100%;
 }
 
 .ticket__type {
   width: 90px;
+  font-size: 18px;
+  font-weight: 400;
+  flex-shrink: 0;
 }
 
 .ticket__seats {
-  width: 30px;
-  text-align: right;
+  width: 35px;
   color: #FFA800;
-  margin-right: 15px;
-  font-size: 16px;
+  font-weight: 500;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+
+.ticket__price-value {
+  margin-left: auto;
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  white-space: nowrap;
+}
+
+.ticket__price-from {
+  font-size: 18px;
+  color: #928F94;
+  font-weight: 400;
 }
 
 .ticket__price {
+  font-size: 24px;
   font-weight: 700;
+  color: #2D2B2F;
+}
+
+.ticket__price-rub {
+  font-size: 18px;
   color: #928F94;
-  margin-left: auto;
 }
 
 .ticket__features {
   display: flex;
   gap: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   justify-content: flex-end;
+  margin-top: auto;
 }
 
 .ticket__feature-icon {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   object-fit: contain;
   opacity: 0.7;
-  transition: opacity 0.2s;
 }
 
 .ticket__feature-icon:hover {
@@ -157,15 +196,23 @@
   background-color: #FFA800;
   color: white;
   border: none;
-  padding: 15px;
+  height: 50px;
   border-radius: 5px;
   font-size: 18px;
   font-weight: 700;
   cursor: pointer;
-  transition: 0.3s;
+  transition: background-color 0.3s, transform 0.1s;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .ticket__btn:hover {
   background-color: #e67e22;
+}
+
+.ticket__btn:active {
+  transform: scale(0.98);
+  background-color: #cc7a00;
 }
